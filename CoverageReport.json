@@ -1,0 +1,1287 @@
+﻿{
+  "DotCoverVersion": "2024.3.6",
+  "Kind": "SolutionRoot",
+  "CoveredStatements": 184,
+  "TotalStatements": 265,
+  "CoveragePercent": 69,
+  "Children": [
+    {
+      "Kind": "Project",
+      "Name": "Zoo.App",
+      "CoveredStatements": 79,
+      "TotalStatements": 142,
+      "CoveragePercent": 56,
+      "Children": [
+        {
+          "Kind": "Namespace",
+          "Name": "Zoo.App",
+          "CoveredStatements": 79,
+          "TotalStatements": 142,
+          "CoveragePercent": 56,
+          "Children": [
+            {
+              "Kind": "Namespace",
+              "Name": "Animals",
+              "CoveredStatements": 25,
+              "TotalStatements": 42,
+              "CoveragePercent": 60,
+              "Children": [
+                {
+                  "Kind": "Type",
+                  "Name": "AnimalFactory",
+                  "CoveredStatements": 3,
+                  "TotalStatements": 3,
+                  "CoveragePercent": 100,
+                  "Children": [
+                    {
+                      "Kind": "Method",
+                      "Name": "Create(string,Species,DateOnly,Food):IAnimal",
+                      "CoveredStatements": 3,
+                      "TotalStatements": 3,
+                      "CoveragePercent": 100
+                    }
+                  ]
+                },
+                {
+                  "Kind": "Type",
+                  "Name": "AnimalService",
+                  "CoveredStatements": 22,
+                  "TotalStatements": 39,
+                  "CoveragePercent": 56,
+                  "Children": [
+                    {
+                      "Kind": "Constructor",
+                      "Name": "AnimalService(IAnimalFactory,IAnimalRepository,IEnclosureRepository,IFeedingOrganizationService,ITransferEvent)",
+                      "CoveredStatements": 8,
+                      "TotalStatements": 8,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "Create(string,Species,DateOnly,Food):void",
+                      "CoveredStatements": 0,
+                      "TotalStatements": 4,
+                      "CoveragePercent": 0
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "Delete(Guid):bool",
+                      "CoveredStatements": 0,
+                      "TotalStatements": 9,
+                      "CoveragePercent": 0
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "GetAll():IEnumerable<IAnimal>",
+                      "CoveredStatements": 0,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 0
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "GetById(Guid):IAnimal",
+                      "CoveredStatements": 0,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 0
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "TransferAnimal(Guid,Guid):bool",
+                      "CoveredStatements": 14,
+                      "TotalStatements": 16,
+                      "CoveragePercent": 88
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Kind": "Namespace",
+              "Name": "Enclosures",
+              "CoveredStatements": 3,
+              "TotalStatements": 29,
+              "CoveragePercent": 10,
+              "Children": [
+                {
+                  "Kind": "Type",
+                  "Name": "EnclosureFactory",
+                  "CoveredStatements": 3,
+                  "TotalStatements": 3,
+                  "CoveragePercent": 100,
+                  "Children": [
+                    {
+                      "Kind": "Method",
+                      "Name": "Create(AnimalType,int):IEnclosure",
+                      "CoveredStatements": 3,
+                      "TotalStatements": 3,
+                      "CoveragePercent": 100
+                    }
+                  ]
+                },
+                {
+                  "Kind": "Type",
+                  "Name": "EnclosureService",
+                  "CoveredStatements": 0,
+                  "TotalStatements": 26,
+                  "CoveragePercent": 0,
+                  "Children": [
+                    {
+                      "Kind": "Constructor",
+                      "Name": "EnclosureService(IEnclosureFactory,IAnimalRepository,IEnclosureRepository)",
+                      "CoveredStatements": 0,
+                      "TotalStatements": 6,
+                      "CoveragePercent": 0
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "Create(AnimalType,int):void",
+                      "CoveredStatements": 0,
+                      "TotalStatements": 4,
+                      "CoveragePercent": 0
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "Delete(Guid):bool",
+                      "CoveredStatements": 0,
+                      "TotalStatements": 14,
+                      "CoveragePercent": 0
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "GetAll():IEnumerable<IEnclosure>",
+                      "CoveredStatements": 0,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 0
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "GetById(Guid):IEnclosure",
+                      "CoveredStatements": 0,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Kind": "Namespace",
+              "Name": "Feeding",
+              "CoveredStatements": 42,
+              "TotalStatements": 53,
+              "CoveragePercent": 79,
+              "Children": [
+                {
+                  "Kind": "Type",
+                  "Name": "FeedingOrganizationService",
+                  "CoveredStatements": 42,
+                  "TotalStatements": 53,
+                  "CoveragePercent": 79,
+                  "Children": [
+                    {
+                      "Kind": "Constructor",
+                      "Name": "FeedingOrganizationService(IFeedingSchedule,IAnimalRepository,IFeedingEvent)",
+                      "CoveredStatements": 6,
+                      "TotalStatements": 6,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "DeleteFeedingPlan(Guid):bool",
+                      "CoveredStatements": 0,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 0
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "Feed(Guid):bool",
+                      "CoveredStatements": 15,
+                      "TotalStatements": 17,
+                      "CoveragePercent": 88
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "FeedAll():void",
+                      "CoveredStatements": 9,
+                      "TotalStatements": 9,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "GetAllHungry():IEnumerable<IAnimal>",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "OwnCoverage",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "AnonymousMethod",
+                          "Name": "(IAnimal):bool",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "SetFeedingPlan(Guid,TimeSpan,Food):bool",
+                      "CoveredStatements": 0,
+                      "TotalStatements": 6,
+                      "CoveragePercent": 0
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "UpdateFeedingFoodType(Guid,Food):bool",
+                      "CoveredStatements": 5,
+                      "TotalStatements": 6,
+                      "CoveragePercent": 83
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "UpdateFeedingInterval(Guid,TimeSpan):bool",
+                      "CoveredStatements": 5,
+                      "TotalStatements": 6,
+                      "CoveragePercent": 83
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Kind": "Namespace",
+              "Name": "Statistics",
+              "CoveredStatements": 9,
+              "TotalStatements": 9,
+              "CoveragePercent": 100,
+              "Children": [
+                {
+                  "Kind": "Type",
+                  "Name": "StatisticsService",
+                  "CoveredStatements": 9,
+                  "TotalStatements": 9,
+                  "CoveragePercent": 100,
+                  "Children": [
+                    {
+                      "Kind": "Constructor",
+                      "Name": "StatisticsService(IEnclosureRepository,IAnimalRepository)",
+                      "CoveredStatements": 5,
+                      "TotalStatements": 5,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "GetTotalAnimalCount():int",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "GetTotalEnclosureCount():int",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "GetTotalHungryAnimalCount():int",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "OwnCoverage",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "AnonymousMethod",
+                          "Name": "(IAnimal):bool",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Kind": "Type",
+              "Name": "ServiceCollectionExtensions",
+              "CoveredStatements": 0,
+              "TotalStatements": 9,
+              "CoveragePercent": 0,
+              "Children": [
+                {
+                  "Kind": "Method",
+                  "Name": "AddApp(IServiceCollection):IServiceCollection",
+                  "CoveredStatements": 0,
+                  "TotalStatements": 9,
+                  "CoveragePercent": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "Project",
+      "Name": "Zoo.Domain",
+      "CoveredStatements": 75,
+      "TotalStatements": 86,
+      "CoveragePercent": 87,
+      "Children": [
+        {
+          "Kind": "Namespace",
+          "Name": "Zoo.Domain",
+          "CoveredStatements": 75,
+          "TotalStatements": 86,
+          "CoveragePercent": 87,
+          "Children": [
+            {
+              "Kind": "Namespace",
+              "Name": "Animals",
+              "CoveredStatements": 25,
+              "TotalStatements": 26,
+              "CoveragePercent": 96,
+              "Children": [
+                {
+                  "Kind": "Type",
+                  "Name": "Animal",
+                  "CoveredStatements": 25,
+                  "TotalStatements": 26,
+                  "CoveragePercent": 96,
+                  "Children": [
+                    {
+                      "Kind": "Constructor",
+                      "Name": "Animal(Guid,string,Species,DateOnly,Food,DateTime,Guid)",
+                      "CoveredStatements": 10,
+                      "TotalStatements": 10,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "AutoProperty",
+                      "Name": "Birthday:DateOnly",
+                      "CoveredStatements": 0,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 0,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 0,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 0
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "AutoProperty",
+                      "Name": "EnclosureId:Guid",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "PropertySetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "AutoProperty",
+                      "Name": "FavouriteFood:Food",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "PropertySetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "AutoProperty",
+                      "Name": "Id:Guid",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "PropertySetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "Property",
+                      "Name": "IsHungry:bool",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "AutoProperty",
+                      "Name": "LastFed:DateTime",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "PropertySetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "AutoProperty",
+                      "Name": "NickName:string",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "PropertySetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "AutoProperty",
+                      "Name": "Species:Species",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "PropertySetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "Feed(Food,DateTime):void",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "Move(Guid):void",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Kind": "Namespace",
+              "Name": "Enclosures",
+              "CoveredStatements": 20,
+              "TotalStatements": 23,
+              "CoveragePercent": 87,
+              "Children": [
+                {
+                  "Kind": "Type",
+                  "Name": "Enclosure",
+                  "CoveredStatements": 20,
+                  "TotalStatements": 23,
+                  "CoveragePercent": 87,
+                  "Children": [
+                    {
+                      "Kind": "Constructor",
+                      "Name": "Enclosure(Guid,AnimalType,int)",
+                      "CoveredStatements": 7,
+                      "TotalStatements": 7,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "AutoProperty",
+                      "Name": "Capacity:int",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "PropertySetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "AutoProperty",
+                      "Name": "Id:Guid",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "PropertySetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "AutoProperty",
+                      "Name": "Type:AnimalType",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "PropertySetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "AddAnimal(Guid):void",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "DeleteAnimal(Guid):bool",
+                      "CoveredStatements": 5,
+                      "TotalStatements": 6,
+                      "CoveragePercent": 83
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "GetAllAnimalIds():IEnumerable<Guid>",
+                      "CoveredStatements": 0,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 0
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "GetAnimalCount():int",
+                      "CoveredStatements": 0,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 0
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "IsFull():bool",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Kind": "Namespace",
+              "Name": "Events",
+              "CoveredStatements": 18,
+              "TotalStatements": 18,
+              "CoveragePercent": 100,
+              "Children": [
+                {
+                  "Kind": "Type",
+                  "Name": "FeedingEvent",
+                  "CoveredStatements": 3,
+                  "TotalStatements": 3,
+                  "CoveragePercent": 100,
+                  "Children": [
+                    {
+                      "Kind": "Event",
+                      "Name": "Feeding:EventHandler<FeedingEventArgs>",
+                      "CoveredStatements": 0,
+                      "TotalStatements": 0,
+                      "CoveragePercent": 0,
+                      "Children": [
+                        {
+                          "Kind": "EventAdder",
+                          "CoveredStatements": 0,
+                          "TotalStatements": 0,
+                          "CoveragePercent": 0
+                        },
+                        {
+                          "Kind": "EventRemover",
+                          "CoveredStatements": 0,
+                          "TotalStatements": 0,
+                          "CoveragePercent": 0
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "OnFeeding(Guid,Food,DateTime):void",
+                      "CoveredStatements": 3,
+                      "TotalStatements": 3,
+                      "CoveragePercent": 100
+                    }
+                  ]
+                },
+                {
+                  "Kind": "Type",
+                  "Name": "FeedingEventArgs",
+                  "CoveredStatements": 6,
+                  "TotalStatements": 6,
+                  "CoveragePercent": 100,
+                  "Children": [
+                    {
+                      "Kind": "AutoProperty",
+                      "Name": "AnimalId:Guid",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "PropertyInitOnlySetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "AutoProperty",
+                      "Name": "FeedingTime:DateTime",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "PropertyInitOnlySetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "AutoProperty",
+                      "Name": "Food:Food",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "PropertyInitOnlySetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Kind": "Type",
+                  "Name": "TransferEvent",
+                  "CoveredStatements": 3,
+                  "TotalStatements": 3,
+                  "CoveragePercent": 100,
+                  "Children": [
+                    {
+                      "Kind": "Event",
+                      "Name": "Transfer:EventHandler<TransferEventArgs>",
+                      "CoveredStatements": 0,
+                      "TotalStatements": 0,
+                      "CoveragePercent": 0,
+                      "Children": [
+                        {
+                          "Kind": "EventAdder",
+                          "CoveredStatements": 0,
+                          "TotalStatements": 0,
+                          "CoveragePercent": 0
+                        },
+                        {
+                          "Kind": "EventRemover",
+                          "CoveredStatements": 0,
+                          "TotalStatements": 0,
+                          "CoveragePercent": 0
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "OnTransfer(Guid,Guid,Guid):void",
+                      "CoveredStatements": 3,
+                      "TotalStatements": 3,
+                      "CoveragePercent": 100
+                    }
+                  ]
+                },
+                {
+                  "Kind": "Type",
+                  "Name": "TransferEventArgs",
+                  "CoveredStatements": 6,
+                  "TotalStatements": 6,
+                  "CoveragePercent": 100,
+                  "Children": [
+                    {
+                      "Kind": "AutoProperty",
+                      "Name": "AnimalId:Guid",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "PropertyInitOnlySetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "AutoProperty",
+                      "Name": "FromEnclosureId:Guid",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "PropertyInitOnlySetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    },
+                    {
+                      "Kind": "AutoProperty",
+                      "Name": "ToEnclosureId:Guid",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "PropertyInitOnlySetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Kind": "Namespace",
+              "Name": "Feeding",
+              "CoveredStatements": 6,
+              "TotalStatements": 7,
+              "CoveragePercent": 86,
+              "Children": [
+                {
+                  "Kind": "Type",
+                  "Name": "FeedingSchedule",
+                  "CoveredStatements": 6,
+                  "TotalStatements": 7,
+                  "CoveragePercent": 86,
+                  "Children": [
+                    {
+                      "Kind": "Constructor",
+                      "Name": "FeedingSchedule()",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "DeleteFeedingPlan(Guid):bool",
+                      "CoveredStatements": 0,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 0
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "GetFeedingPlan(Guid):FeedingPlan",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "SetFeedingPlan(FeedingPlan):void",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "UpdateFeedingFoodType(Guid,Food):void",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "UpdateFeedingInterval(Guid,TimeSpan):void",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "UpdateFeedingLastFed(Guid,DateTime):void",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Kind": "Namespace",
+              "Name": "Models",
+              "CoveredStatements": 6,
+              "TotalStatements": 6,
+              "CoveragePercent": 100,
+              "Children": [
+                {
+                  "Kind": "Type",
+                  "Name": "FeedingPlan",
+                  "CoveredStatements": 4,
+                  "TotalStatements": 4,
+                  "CoveragePercent": 100,
+                  "Children": [
+                    {
+                      "Kind": "Constructor",
+                      "Name": "FeedingPlan(Guid,TimeSpan,Food)",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "AutoProperty",
+                      "Name": "LastFed:DateTime",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "PropertyGetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "PropertyInitOnlySetter",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Kind": "Type",
+                  "Name": "Food",
+                  "CoveredStatements": 1,
+                  "TotalStatements": 1,
+                  "CoveragePercent": 100,
+                  "Children": [
+                    {
+                      "Kind": "Constructor",
+                      "Name": "Food(string,AnimalType)",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    }
+                  ]
+                },
+                {
+                  "Kind": "Type",
+                  "Name": "Species",
+                  "CoveredStatements": 1,
+                  "TotalStatements": 1,
+                  "CoveragePercent": 100,
+                  "Children": [
+                    {
+                      "Kind": "Constructor",
+                      "Name": "Species(string,AnimalType)",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Kind": "Type",
+              "Name": "ServiceCollectionExtensions",
+              "CoveredStatements": 0,
+              "TotalStatements": 6,
+              "CoveragePercent": 0,
+              "Children": [
+                {
+                  "Kind": "Method",
+                  "Name": "AddDomain(IServiceCollection):IServiceCollection",
+                  "CoveredStatements": 0,
+                  "TotalStatements": 6,
+                  "CoveragePercent": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Kind": "Project",
+      "Name": "Zoo.Infrastructure",
+      "CoveredStatements": 30,
+      "TotalStatements": 37,
+      "CoveragePercent": 81,
+      "Children": [
+        {
+          "Kind": "Namespace",
+          "Name": "Zoo.Infrastructure",
+          "CoveredStatements": 30,
+          "TotalStatements": 37,
+          "CoveragePercent": 81,
+          "Children": [
+            {
+              "Kind": "Namespace",
+              "Name": "Animals",
+              "CoveredStatements": 9,
+              "TotalStatements": 9,
+              "CoveragePercent": 100,
+              "Children": [
+                {
+                  "Kind": "Type",
+                  "Name": "AnimalRepository",
+                  "CoveredStatements": 9,
+                  "TotalStatements": 9,
+                  "CoveragePercent": 100,
+                  "Children": [
+                    {
+                      "Kind": "Constructor",
+                      "Name": "AnimalRepository()",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "Add(IAnimal):void",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "Delete(Guid):bool",
+                      "CoveredStatements": 4,
+                      "TotalStatements": 4,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "GetAll():IEnumerable<IAnimal>",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "GetById(Guid):IAnimal",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "OwnCoverage",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "AnonymousMethod",
+                          "Name": "(IAnimal):bool",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Kind": "Namespace",
+              "Name": "Enclosures",
+              "CoveredStatements": 9,
+              "TotalStatements": 9,
+              "CoveragePercent": 100,
+              "Children": [
+                {
+                  "Kind": "Type",
+                  "Name": "EnclosureRepository",
+                  "CoveredStatements": 9,
+                  "TotalStatements": 9,
+                  "CoveragePercent": 100,
+                  "Children": [
+                    {
+                      "Kind": "Constructor",
+                      "Name": "EnclosureRepository()",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "Add(IEnclosure):void",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "Delete(Guid):bool",
+                      "CoveredStatements": 4,
+                      "TotalStatements": 4,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "GetAll():IEnumerable<IEnclosure>",
+                      "CoveredStatements": 1,
+                      "TotalStatements": 1,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "GetById(Guid):IEnclosure",
+                      "CoveredStatements": 2,
+                      "TotalStatements": 2,
+                      "CoveragePercent": 100,
+                      "Children": [
+                        {
+                          "Kind": "OwnCoverage",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        },
+                        {
+                          "Kind": "AnonymousMethod",
+                          "Name": "(IEnclosure):bool",
+                          "CoveredStatements": 1,
+                          "TotalStatements": 1,
+                          "CoveragePercent": 100
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Kind": "Namespace",
+              "Name": "Events",
+              "CoveredStatements": 12,
+              "TotalStatements": 12,
+              "CoveragePercent": 100,
+              "Children": [
+                {
+                  "Kind": "Type",
+                  "Name": "FeedingEventLogger",
+                  "CoveredStatements": 6,
+                  "TotalStatements": 6,
+                  "CoveragePercent": 100,
+                  "Children": [
+                    {
+                      "Kind": "Method",
+                      "Name": "HandleFeedingEvent(object,FeedingEventArgs):void",
+                      "CoveredStatements": 3,
+                      "TotalStatements": 3,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "Listen(IFeedingEvent):void",
+                      "CoveredStatements": 3,
+                      "TotalStatements": 3,
+                      "CoveragePercent": 100
+                    }
+                  ]
+                },
+                {
+                  "Kind": "Type",
+                  "Name": "TransferEventListener",
+                  "CoveredStatements": 6,
+                  "TotalStatements": 6,
+                  "CoveragePercent": 100,
+                  "Children": [
+                    {
+                      "Kind": "Method",
+                      "Name": "HandleTransferEvent(object,TransferEventArgs):void",
+                      "CoveredStatements": 3,
+                      "TotalStatements": 3,
+                      "CoveragePercent": 100
+                    },
+                    {
+                      "Kind": "Method",
+                      "Name": "Listen(ITransferEvent):void",
+                      "CoveredStatements": 3,
+                      "TotalStatements": 3,
+                      "CoveragePercent": 100
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Kind": "Type",
+              "Name": "ServiceCollectionExtensions",
+              "CoveredStatements": 0,
+              "TotalStatements": 7,
+              "CoveragePercent": 0,
+              "Children": [
+                {
+                  "Kind": "Method",
+                  "Name": "AddInfrastructure(IServiceCollection):IServiceCollection",
+                  "CoveredStatements": 0,
+                  "TotalStatements": 7,
+                  "CoveragePercent": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
