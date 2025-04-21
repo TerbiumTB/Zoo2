@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+<!--    <ItemGroup>-->
+<!--        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />-->
+<!--        <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />-->
+<!--    </ItemGroup>-->
+    
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.1"/>
+        <ProjectReference Include="..\Zoo.Infrastructure\Zoo.Infrastructure.csproj"/>
+        <ProjectReference Include="..\Zoo.App\Zoo.App.csproj"/>
+        <ProjectReference Include="..\Zoo.Domain\Zoo.Domain.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="..\Zoo.Tests" />
+    </ItemGroup>
+
+</Project>
